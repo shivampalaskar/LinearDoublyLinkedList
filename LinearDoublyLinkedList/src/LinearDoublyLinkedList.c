@@ -160,6 +160,9 @@ void delAtPos(int pos) {
 	if(pos==1){
 		delFirst();
 		return;
+	}
+	if(pos==getLength()){
+		delLast();
 	} else {
 		while ((--pos) > 1) {   // this will give (position-1)th index
 			tempPtr = tempPtr->nextNode;
@@ -242,6 +245,8 @@ void addNodeAtGivenPos(int num,int pos){
 			newNode->nextNode = tempPtr->nextNode;
 			tempPtr->nextNode = newNode;
 			newNode->PreNode = tempPtr;
+
+			(newNode->nextNode)->PreNode=newNode;
 		}
 	return;
 }
