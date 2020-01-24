@@ -38,6 +38,7 @@ NODE* head = NULL;
 int main(void) {
 	setvbuf(stdout, NULL, _IONBF, 0);
 	int choice, num,pos;
+	float iu;
 	do {
 		printf("\nChose operation to perform : ");
 		printf("\n1) Add at First Position");
@@ -280,6 +281,7 @@ void displayNodesRtoL(){
 	struct Node* tempPtr;
 	tempPtr=head;
 	while(tempPtr!=NULL){
+		printf("%d ",tempPtr->data);
 		tempPtr = tempPtr->nextNode;
 	}
 }
