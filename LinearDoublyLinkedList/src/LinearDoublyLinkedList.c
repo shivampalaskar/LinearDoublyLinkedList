@@ -79,13 +79,13 @@ int main(void) {
 			if(isEmpty())
 				printf("\nLinked List is Empty");
 			else
-				displayNodesRtoL();
+				displayNodesLtoR();
 			break;
 		case 5:
 			if (isEmpty())
 				printf("\nLinked List is Empty");
 			else
-				displayNodesLtoR();
+				displayNodesRtoL();
 			break;
 		case 6:
 			if (isEmpty())
